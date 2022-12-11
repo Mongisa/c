@@ -9,9 +9,7 @@ int main() {
     
     printf("Inserisci un numero: ");
     scanf("%d", &num);
-    
-    printf("%d", num);
-    
+        
     primo = check_Primo(num);
     armstrong = check_Armstrong(num);
     
