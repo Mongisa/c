@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-MacOSX
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
-CND_ARTIFACT_NAME_Debug=lezione3_10_23
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/lezione3_10_23
+CND_ARTIFACT_NAME_Debug=esercizio020
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/esercizio020
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
-CND_PACKAGE_NAME_Debug=lezione31023.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/lezione31023.tar
+CND_PACKAGE_NAME_Debug=esercizio020.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/esercizio020.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-MacOSX
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-MacOSX
-CND_ARTIFACT_NAME_Release=lezione3_10_23
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/lezione3_10_23
+CND_ARTIFACT_NAME_Release=esercizio020
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/esercizio020
 CND_PACKAGE_DIR_Release=dist/Release/GNU-MacOSX/package
-CND_PACKAGE_NAME_Release=lezione31023.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/lezione31023.tar
+CND_PACKAGE_NAME_Release=esercizio020.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/esercizio020.tar
 #
 # include compiler specific variables
 #
