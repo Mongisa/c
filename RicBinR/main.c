@@ -45,20 +45,21 @@ int main(int argc, char** argv) {
 }
 
 int ricBinRic(infoTy *v, int n, infoTy k) {
-    if(n==0) {
+    if(n==0) { //CASO BASE INIZIO
         return -1;
     }
     int chosen = n/2;
     
     if(equal(v[chosen],k)) {
         return chosen;
-    }
+    } //CASO BASE FINE
     
-    if(less(v[chosen],k)) {
-        int ret = ricBinRic(v+chosen+1,n-(chosen+1),k);
-        if(ret==-1) return ret;
+    if(less(v[chosen],k)) { //COMBINA
+        int ret = ricBinRic(v+chosen+1,n-(chosen+1),k); //DIVIDE ET IMPERA
+        if(ret==-1) return ret; //COMBINA
         
-        return ret+chosen+1;       
+        return ret+chosen+1; //COMBINA 
     } 
-    return ricBinRic(v,chosen,k);
+    int ret = ricBinRic(v,chosen,k); //DIVIDE ET IMPERA
+    return ret; //COMBINA
 }
