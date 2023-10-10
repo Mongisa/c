@@ -7,30 +7,31 @@
  * File:   main.c
  * Author: mongisa
  *
- * Created on 9 ottobre 2023, 11.54
+ * Created on 9 ottobre 2023, 22.56
  */
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
+#define DIM 10
 
-/*
- * 
- */
+int sommaDispari(int n,int* vet);
+int minimo(int n, int* vet);
+bool tuttiMaggioriDi(int n, int* vet, int k);
+
 int main(int argc, char** argv) {
 
-    struct intSt {
-        int a;
-        int b;
-        int somma(int a,int b);
-    };
+    int a[10] = {6,45,32,56,76,32,12,4,5,67};
     
-    struct intSt c;
-    
-    c.a=1;
-    c.b=3;
-    
-    printf("%d",c.somma());
+    printf("La somma è %d", sommaDispari());
     
     return (EXIT_SUCCESS);
 }
 
+int minimo(int n, int* vet) {
+    
+}
+
+int sommaDispari(int n, int* vet) {
+
+} 
