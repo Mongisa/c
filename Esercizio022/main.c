@@ -13,7 +13,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#define DIM 10
+#define DIM 7
 
 typedef int infoTy;
 
@@ -31,7 +31,7 @@ bool greater(infoTy a, infoTy b) {
 
 int main(int argc, char** argv) {
 
-    infoTy a[DIM] = {1,45,32,56,1,32,12,4,5,80};
+    infoTy a[DIM] = {32,34,65,76,54,34,2};
     infoTy min_I,k;
     
     printf("La somma degli elementi in posizione dispari è %d\n", sommaDispari(a,DIM));
@@ -40,7 +40,8 @@ int main(int argc, char** argv) {
 
     printf("Il valore minimo è in posizione %d e vale %d\n",min_I,a[min_I]);
 
-    k=79;
+    printf("Inserisci numero da confrontare: ");
+    scanf("%d",&k);
 
     if(tuttiMaggioriDi(a,DIM,k)) {
         printf("%d è maggiore di tutti gli elementi del vettore\n",k);
@@ -69,13 +70,13 @@ int minimo(infoTy vet[], int n) {
 }
 
 bool tuttiMaggioriDi(infoTy vet[], int n, int k) {
-    if(n==0) return false;
-    
-    int res = tuttiMaggioriDi(vet,n-1,k);
 
-    if(res) {
-        return res;
-    } else {
-        return greater(k,n-1);
+    if(n==0) return true;
+    
+    if(greater(vet[n-1],k)) {
+        return false;
     }
+    
+    return tuttiMaggioriDi(vet,n-1,k);
+    
 }
