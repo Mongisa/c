@@ -19,11 +19,7 @@ typedef int infoTy;
 
 int ricercaMinimoRic(infoTy vet[], int n);
 bool less(infoTy a, infoTy b) {
-    if(a < b) {
-        return true;
-    } else {
-        return false;
-    }
+    return (a<b) ? true : false;
 }
 
 int main(int argc, char** argv) {
