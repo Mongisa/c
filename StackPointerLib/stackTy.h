@@ -16,27 +16,21 @@
 #define CAPACITY 100
 
 #include <stdbool.h>
-
-typedef int infoTy;
+#include "infoTy.h"
+#include "fReplyTy.h"
 
 typedef struct stackSt {
     int n;
     infoTy a[CAPACITY];
 } stackTy;
 
-typedef struct fReplySt { //Valore di ritorno di alcune funzioni
-    bool check;
-    infoTy res;
-} fReplyTy;
-
 stackTy s_create(void); //Crea lo stack
 void s_destroy(stackTy*); //Distrugge lo stack
-void s_push(stackTy*,infoTy); //Aggiunge un elemento alla testa dello stack
+fReplyTy s_push(stackTy*,infoTy); //Aggiunge un elemento alla testa dello stack
 fReplyTy s_pop(stackTy*); //Elimina un elemento dalla testa dello stack e lo ritorna
 fReplyTy s_top(stackTy*); //Da in output l'elemento in testa allo stack senza eliminarlo
 bool s_isEmpty(stackTy*); //Ritorna TRUE se lo stack è vuoto
 bool s_isFull(stackTy*); //Ritorna TRUE se lo stack è pieno
-void printStack(stackTy*);
+void s_print(stackTy*);
 
 #endif /* HEADER_H */
-

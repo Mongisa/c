@@ -4,8 +4,9 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>fReplyTy.h</itemPath>
       <itemPath>infoTy.h</itemPath>
-      <itemPath>stack.h</itemPath>
+      <itemPath>stackTy.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -15,7 +16,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>infoTy.c</itemPath>
-      <itemPath>stack.c</itemPath>
+      <itemPath>stackTy.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -38,21 +39,18 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
-        <cTool>
-          <incFile>
-            <pElem>stack.h</pElem>
-          </incFile>
-        </cTool>
         <archiverTool>
         </archiverTool>
       </compileType>
+      <item path="fReplyTy.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="infoTy.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="infoTy.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="stack.c" ex="false" tool="0" flavor2="0">
+      <item path="stackTy.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="stack.h" ex="false" tool="3" flavor2="0">
+      <item path="stackTy.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="3">
@@ -77,13 +75,15 @@
         <archiverTool>
         </archiverTool>
       </compileType>
+      <item path="fReplyTy.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="infoTy.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="infoTy.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="stack.c" ex="false" tool="0" flavor2="0">
+      <item path="stackTy.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="stack.h" ex="false" tool="3" flavor2="0">
+      <item path="stackTy.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

@@ -36,7 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/infoTy.o \
-	${OBJECTDIR}/stack.o
+	${OBJECTDIR}/stackTy.o
 
 
 # C Compiler Flags
@@ -70,10 +70,10 @@ ${OBJECTDIR}/infoTy.o: infoTy.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/infoTy.o infoTy.c
 
-${OBJECTDIR}/stack.o: stack.c
+${OBJECTDIR}/stackTy.o: stackTy.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/stack.o stack.c
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/stackTy.o stackTy.c
 
 # Subprojects
 .build-subprojects:

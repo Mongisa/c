@@ -1,4 +1,7 @@
-#include "stack.h"
+#include "fReplyTy.h"
+#include "infoTy.h"
+#include "stackTy.h"
+#include <stdio.h>
 
 stackTy s_create() {
     stackTy sp;
@@ -34,7 +37,7 @@ fReplyTy s_pop(stackTy* sp) {
     return r;
 }
 
-fReplyTy s_push(stackTy* sp) {
+fReplyTy s_push(stackTy* sp, infoTy x) {
     fReplyTy r;
     
     if(s_isFull(sp) == true) {
@@ -46,15 +49,15 @@ fReplyTy s_push(stackTy* sp) {
     r.check = true;
     r.res = 0;
     
-    sp->a[sp->n-1];
     sp->n++;
+    sp->a[sp->n-1]=x;
     
     return r;
 }
 
-void printStack(stackTy* sp) {
+void s_print(stackTy* sp) {
     printf("\n");
     for(int i=0;i<sp->n;i++) {
-        printf("%d ",sp->a[i]);
+        infoPrint(sp->a[i]);
     }
 }
