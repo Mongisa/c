@@ -4,21 +4,22 @@
  */
 
 /* 
- * File:   infoTy.h
+ * File:   fReplyTy.h
  * Author: mongisa
  *
- * Created on 17 ottobre 2023, 9.58
+ * Created on 18 ottobre 2023, 19.44
  */
 
-#ifndef INFOTY_H
-#define INFOTY_H
+#ifndef FREPLYTY_H
+#define FREPLYTY_H
 
 #include <stdbool.h>
+#include "infoTy.h"
 
-typedef int infoTy;
+typedef struct fReplySt { //Valore di ritorno di alcune funzioni
+    bool check;
+    infoTy res;
+} fReplyTy;
 
-void infoPrint(infoTy);
-bool infoEqual(infoTy,infoTy);
-
-#endif /* INFOTY_H */
+#endif /* FREPLYTY_H */
 

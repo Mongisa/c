@@ -15,7 +15,7 @@
 
 #include <stdbool.h>
 
-typedef int infoTy;
+typedef char infoTy;
 
 void infoPrint(infoTy);
 bool infoEqual(infoTy,infoTy);
