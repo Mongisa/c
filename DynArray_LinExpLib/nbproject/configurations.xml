@@ -5,9 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>arrayTy.h</itemPath>
-      <itemPath>fReplyTy.h</itemPath>
       <itemPath>infoTy.h</itemPath>
-      <itemPath>stackTy.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -18,7 +16,6 @@
                    projectFiles="true">
       <itemPath>arrayTy.c</itemPath>
       <itemPath>infoTy.c</itemPath>
-      <itemPath>stackTy.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -48,15 +45,9 @@
       </item>
       <item path="arrayTy.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="fReplyTy.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="infoTy.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="infoTy.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="stackTy.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="stackTy.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="3">
@@ -85,15 +76,9 @@
       </item>
       <item path="arrayTy.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="fReplyTy.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="infoTy.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="infoTy.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="stackTy.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="stackTy.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>
