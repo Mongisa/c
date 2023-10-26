@@ -3,7 +3,7 @@
 #include "infoTy.h"
 
 void infoPrint(infoTy info) {
-    printf("%c ",info);
+    printf("%d ",info);
 }
 
 bool infoEqual(infoTy a,infoTy b) {

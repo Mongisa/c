@@ -1,36 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/cFiles/file.h to edit this template
- */
+#ifndef STACKTY_H
+#define STACKTY_H
 
-/* 
- * File:   header.h
- * Author: mongisa
- *
- * Created on 16 ottobre 2023, 22.01
- */
-
-#ifndef HEADER_H
-#define HEADER_H
-
-#define CAPACITY 100
-
-#include <stdbool.h>
-#include "infoTy.h"
+#include "arrayTy.h"
 #include "fReplyTy.h"
+#include "infoTy.h"
+#include <stdbool.h>
 
-typedef struct stackSt {
+struct stackSt {
     int n;
-    infoTy a[CAPACITY];
-} stackTy;
+    int capacity;
+    arrayTy a;
+};
 
-stackTy s_create(void); //Crea lo stack
-void s_destroy(stackTy*); //Distrugge lo stack
-fReplyTy s_push(stackTy*,infoTy); //Aggiunge un elemento alla testa dello stack
-fReplyTy s_pop(stackTy*); //Elimina un elemento dalla testa dello stack e lo ritorna
-fReplyTy s_top(stackTy*); //Da in output l'elemento in testa allo stack senza eliminarlo
-bool s_isEmpty(stackTy*); //Ritorna TRUE se lo stack è vuoto
-bool s_isFull(stackTy*); //Ritorna TRUE se lo stack è pieno
-void s_print(stackTy*);
+typedef struct stackSt stackTy;
 
-#endif /* HEADER_H */
+stackTy stackCreate(int);
+void stackDestroy(stackTy*);
+fReplyTy stackPush(stackTy*,infoTy);
+fReplyTy stackPop(stackTy*);
+fReplyTy stackTop(stackTy*);
+bool stackIsEmpty(stackTy*);
+bool stackIsFull(stackTy*);
+
+#endif /* STACKTY_H */
+

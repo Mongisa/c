@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/arrayTy.o \
 	${OBJECTDIR}/infoTy.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/stackTy.o
@@ -63,6 +64,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/esercizio042: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/esercizio042 ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/arrayTy.o: arrayTy.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arrayTy.o arrayTy.c
 
 ${OBJECTDIR}/infoTy.o: infoTy.c
 	${MKDIR} -p ${OBJECTDIR}
