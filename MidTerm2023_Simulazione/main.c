@@ -206,13 +206,26 @@ void array_print_unique(TArray *array) {
     if(array_length(array)==0) return;
     
     TList l = list_create();
+    TList l2 = list_create();
+    
     printf("\nStampa vettore: ");
     for(int i=0;i<array_length(array);i++) {
         int value = array_get(array,i);
         if(!list_search(l,value)) {
-            infoPrint(value);
             l = list_insert(l,value);
+        } else {
+            l2 = list_insert(l2,value);
         }
     }
+    
+    for(int i=0;i<array_length(array);i++) {
+        int value = array_get(array,i);
+        if(!list_search(l2,value)) {
+            infoPrint(value);
+        }
+    }
+    
+    list_destroy(l);
+    list_destroy(l2);
     
 }
