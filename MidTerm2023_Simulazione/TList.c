@@ -47,7 +47,7 @@ void list_print(TList list) {
 }
 
 TNode *list_search(TList list, TInfo info) {
-    if (list == NULL || infoGreater(list->info, info))
+    if (list == NULL|| infoGreater(list->info, info))
         return NULL;
     if (infoEqual(list->info, info))
         return list;
@@ -55,7 +55,7 @@ TNode *list_search(TList list, TInfo info) {
 }
 
 TList list_insert(TList list, TInfo info) {
-    if (list == NULL || infoGreater(list->info, info)) {
+    if (list == NULL|| infoGreater(list->info, info)) {
         TNode *newnode = node_create(info);
         assert(newnode != NULL);
         newnode->link = list;

@@ -161,6 +161,8 @@ int main(int argc, char** argv) {
      EFFETTUA UNA STAMPA DELL'ARRAY.
      CHIAMA LA FUNZIONE PER STAMPARE ELEMENTI UNICI.
      */
+    array_print_unique(&array1);
+    array_print_unique(&array2);
 
     return (EXIT_SUCCESS);
 }
@@ -201,7 +203,16 @@ void queue_delete_kth_element(TQueue *q, int k) {
 }
 
 void array_print_unique(TArray *array) {
-    /*
-     INSERISCI IL CODICE
-     */
+    if(array_length(array)==0) return;
+    
+    TList l = list_create();
+    printf("\nStampa vettore: ");
+    for(int i=0;i<array_length(array);i++) {
+        int value = array_get(array,i);
+        if(!list_search(l,value)) {
+            infoPrint(value);
+            l = list_insert(l,value);
+        }
+    }
+    
 }

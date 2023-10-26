@@ -19,5 +19,7 @@ void array_destroy(TArray *a);
 void array_resize(TArray *a, int length);
 void array_print(TArray *a);
 void array_insert(TArray *a, TInfo info);
+int array_length(TArray*);
+TInfo array_get(TArray*,int);
 
 #endif
