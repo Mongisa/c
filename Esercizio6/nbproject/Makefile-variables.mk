@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-MacOSX
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
-CND_ARTIFACT_NAME_Debug=esercizio3-4
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/esercizio3-4
+CND_ARTIFACT_NAME_Debug=esercizio6
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/esercizio6
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
-CND_PACKAGE_NAME_Debug=esercizio3-4.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/esercizio3-4.tar
+CND_PACKAGE_NAME_Debug=esercizio6.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/esercizio6.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-MacOSX
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-MacOSX
-CND_ARTIFACT_NAME_Release=esercizio3-4
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/esercizio3-4
+CND_ARTIFACT_NAME_Release=esercizio6
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/esercizio6
 CND_PACKAGE_DIR_Release=dist/Release/GNU-MacOSX/package
-CND_PACKAGE_NAME_Release=esercizio3-4.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/esercizio3-4.tar
+CND_PACKAGE_NAME_Release=esercizio6.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/esercizio6.tar
 #
 # include compiler specific variables
 #
